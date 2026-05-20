@@ -1,4 +1,14 @@
 import pandas as pd
-s=pd.read_csv('data.csv')
-c=s.isnull().sum()
-c.to_csv('0520-1.csv')
+
+data = [
+
+    ["Amy", 23, 88],
+
+    ["Bob", 25, 92],
+
+    ["Cathy", 22, 79]
+
+]
+
+df = pd.DataFrame(data, columns=["name", "age", "score"])
+print(df.describe.round(2))
